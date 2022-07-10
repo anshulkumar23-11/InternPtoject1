@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/icon.png" class="menu-icon" onclick="menutoggle()">
+            <h2 id="head1" style="color: black;">ATLAS</h2>
+            <div class="navi">
+                <ul>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">News <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#">1News</a></li>
+                        <li><a href="#">2 News</a></li>
+                    </ul></li>
+                    <li><a href="#">Random</a>
+                    <ul>
+                        <li><a href="#">Random1</a></li>
+                        <li><a href="#">Random2</a></li>
+                    </ul></li>
+                 <li> <a href="#">Fashion</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <a href="#">Reviews</a>
+                <a href="#">News</a>
+                <a href="#">Random</a>
+                <a href="#">Fashion</a>
+            </ul>
+        </nav>
+        <img src="images/searchicon.webp" class="menu-icon1">
+    </div>
+    <div class="main">
+   
+    <div class="con1">
+        <div class="con1a">
+            <img src="images/category-3.jpg" class="iconimg" alt="">
+            <div class="text">
+                <p style="font-weight: bold;">American sweet pancake with honey</p>
+                <p>about a year ago</p>
+            </div>
+        </div>
+        <div class="con1b">
+            <img src="images/category-3.jpg" class="iconimg" alt="">
+            <div class="text">
+                <p style="font-weight: bold;">How to spend a vacation in maldivies</p>
+                <p>about a year ago</p>
+            </div>
+        </div>
+        <div class="con1c">
+            <img src="images/category-3.jpg" class="iconimg" alt="">
+            <div class="text">
+                <p style="font-weight: bold;">Fashion & style tips every women should know</p>
+                <p>8 Month ago</p>
+            </div>
+        </div>
+        <div class="con1d">
+            <img src="images/category-3.jpg" class="iconimg" alt="">
+            <div class="text">
+                <p style="font-weight: bold;">How lovely yellow is! it stand for the sun</p>
+                <p>about a year ago</p>
+            </div>
+        </div>
+    </div>
+    <div class="imgcon">
+        <div class="img1">
+            <div class="img1a">
+                <div class="head1">
+                    <button class="button button1">Fashion</button>
+                    <h3>Fashion & style tips every women should know</h3>
+                    <p class="para">8 month ago</p>
+                </div>
+            </div>
+            <div class="img1b">
+                <div class="head1">
+                    <button class="button button2">Food</button>
+                    <h3>Fast food is popular because it's convinient</h3>
+                    <p class="para">about a year ago</p>
+                </div>
+               
+            </div>
+        </div>
+        <div class="img2">
+            <div class="img2a">
+                <div class="head2">
+                    <button class="button button3">Fashion</button>
+                    <h2 style="color: orangered;">How lovely yellow is! its stand for the sun</h2>
+                    <p style="font-weight: bold;" class="para">about a year ago</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="img1">
+            <div class="img1c">
+                <div class="head1">
+                    <button class="button button4">Sports</button>
+                    <h3>For good results must be make good plans</h3>
+                    <p class="para">about a year ago</p>
+                </div>
+                
+            </div>
+            <div class="img1d">
+                <div class="head1">
+                    <button class="button button5">Tech</button>
+                    <h3>If you thinks lifting is dangerous try being weak</h3>
+                    <p class="para">about a year ago</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<br><br><br><br>
+</div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+</html>

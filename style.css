@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .logo{
+    display: flex;
+ }
+ 
+ .navbar{
+     display: flex;
+     align-items: center;
+     padding: 20px;
+ }
+ .logo a{
+     margin-right: 20px;
+     text-decoration: none;
+     color: black;
+     font-weight: 200;
+     font-size: small;
+     text-align: center;
+ }
+
+ .navi{
+    margin-left: 6%;
+ }
+
+ .navi ul{
+    display: flex;
+ }
+
+ .navi ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+ }
+
+ .navi ul li a{
+    display: block;
+    text-decoration: none;
+    margin-right: 20px;
+     text-decoration: none;
+     color: black;
+     font-weight: 300;
+     font-size: large;
+     text-align: center;
+ }
+
+ .navi ul ul{
+    position: absolute;
+    display: none;
+ }
+ .navi ul li:hover > ul{
+    display: block;
+ }
+ .navi ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+ }
+ .navi ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+ }
+ nav{
+     flex: 1;
+     text-align: right;
+ }
+
+ nav a{
+     display: inline;
+     display: inline-block;
+     margin-right: 20px;
+     text-decoration: none;
+     flex-wrap: wrap;
+     color: black;
+     font-weight: 600;
+     font-size: larger;
+ }
+
+ nav a:hover{
+     color: blue;
+ }
+
+.menu-icon{
+    width: 26px;
+    margin-left: 20px;
+}
+
+.menu-icon1{
+    width: 26px;
+}
+
+#head1{
+    margin-left: 10%;
+}
+
+.main{
+    background-color: azure;
+}
+
+.con1{
+    background-color: white;
+    height: 200px;
+    display: flex;
+}
+
+.con1a, .con1b, .con1c, .con1d{
+    width: 24%;
+    margin: 0.5%;
+    background-color: white;
+    display: flex;
+}
+
+.iconimg{
+    border-radius: 50%;
+    margin: 10%;
+    margin-right: 5%;
+}
+
+.imgcon{
+    display: flex;
+    background-color: white;
+}
+
+.img1, .img2, .img3{
+    background-color: white;
+    height: 600px;
+}
+
+.img1{
+    width: 25%;
+}
+.img2{
+    width: 49%;
+}
+.img3{
+    width: 25%;
+}
+.img1a,.img1b,.img1c,.img1d{
+    /* background-color: aqua; */
+    width: 90%;
+    height: 44%;
+    margin: 5%;
+    border-radius: 5%;
+}
+.img2a{
+    border-radius: 5%;
+    /* margin:2%; */
+    height: 90%;
+    /* background-color: aqua; */
+}
+
+.img2a{
+    background-image: url(images/virat.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img1a,.img1c{
+    background-image: url(images/fruit.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1b,.img1d{
+    background-image: url(images/fruit2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 3px 1.5px; */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .button1, .button3 {
+    background-color: purple;
+    color: white;
+    margin-bottom: 5%;
+  }
+
+  .button2 , .button4{
+    background-color: orangered;
+    color: white;
+    margin-bottom: 5%;
+  }
+  nav ul{
+    display: none;
+  }
+
+  .button5{
+    background-color: red;
+    color: white;
+    margin-bottom: 5%;
+  }
+  .head1,.head2{
+    margin: 5%;
+    padding-top: 50%;
+  }
+  .head2{
+    padding-top: 65%;
+  }
+  .head2 p{
+    color: green;
+  }
+  h3{
+    color: white;
+  }
+  .para{
+    color: white;
+  }
+  .button1:hover , .button2:hover,.button3:hover,.button4:hover,.button5:hover{
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.text{
+    margin-top: 20%;
+    /* align-items: center; */
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul a{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .menu-icon{
+        display: block;    
+    }
+    .con1{
+        display: block;
+        height: auto;
+        margin: 0;
+    }
+    .con1a,.con1b,.con1c,.con1d{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        /* background-color: rgb(250, 240, 240); */
+    }
+    .iconimg{
+        width: 30%;
+    }
+    .imgcon{
+        display: block;
+    }
+    .img1{
+        width: 99%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+    .head1{
+        padding-top: 40%;
+    }
+    .head2{
+        padding-top: 90%;
+    }
+    .img2{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    nav ul{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }
+}
